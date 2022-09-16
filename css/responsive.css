@@ -359,6 +359,12 @@
         display: block;
         text-align: center;
     }
+    #top {
+        margin-bottom: 87px;
+    }
+    #skills {
+        margin-top: 0;
+    }
     .skills-circle {
         border: 2px solid #02040E;
     }
