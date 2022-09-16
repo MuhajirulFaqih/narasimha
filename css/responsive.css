@@ -347,8 +347,7 @@
         font-size: 56px;
     }
     #about {
-        overflow-y: auto;
-        align-items: start;
+        padding: 80px 0 40px;
     }
     .about-content {
         margin-top: 24px;
