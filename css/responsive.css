@@ -369,9 +369,9 @@
     }
     .about-footer {
         font-size: 32px;
-        right: auto;
         display: block;
         text-align: center;
+        width: 100%;
     }
     #experience {
         height: auto;

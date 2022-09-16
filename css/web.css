@@ -43,8 +43,8 @@ button, input {
     position: relative;
     min-height: 100vh;
 }
-.hero-logo, .hero-social, .hero-social a, .hero-scroll,
-.about-cta, .about-cta > div > span, .skills-circle, .skills-box-white,
+.hero-logo, .hero-social, .hero-social a, .hero-scroll, .hero-title small,
+.about-cta, .about-cta > div > span, .skills-circle, .skills-box-white, .skills-point-4, .skills-point-5,
 .experience-nav, .experience-nav span, .portfolio-box-caption a, .portfolio-cta div, 
 .touch-contact span, .touch-contact div, .footer-logo, .footer-social, .footer-social a {
     display: inline-block;
@@ -209,6 +209,10 @@ button, input {
     background: #A0CECB;
     color: #02040E;
     position: relative;
+    overflow: hidden;
+}
+.skills-box div {
+    z-index: 1;
 }
 .skills-box:after {
     content: "";
@@ -218,6 +222,8 @@ button, input {
     width: 170px;
     height: 167px;
     background: #FFFFFF;
+    z-index: 0;
+    animation: stretch 6s linear infinite;
 }
 .skills-point-1, .skills-point-2, .skills-point-3,
 .skills-point-4, .skills-point-5, .skills-point-6,
@@ -250,6 +256,7 @@ button, input {
     border-radius: 50%;
     border: 4px solid #02040E;
     position: relative;
+    animation: rotation 15s linear infinite;
 }
 .skills-point-3 {
     font-size: 56px;
@@ -271,6 +278,10 @@ button, input {
 .skills-point-5 {
     font-size: 32px;
     color: #02040E;
+    overflow: hidden;
+    border-right: .15em solid #02040E;
+    white-space: nowrap;
+    animation: typing 5.5s linear infinite, blink-caret .85s step-end infinite;
 }
 .skills-point-6 {
     margin: 84px 0 59px;
@@ -285,6 +296,7 @@ button, input {
 .skills-point-8 {
     text-align: right;
     font-size: 32px;
+    animation: colorChange 2s ease-in-out infinite;
 }
 #experience {
     margin-bottom: 100px;
@@ -349,6 +361,16 @@ button, input {
 .experience-image {
     position: absolute;
     top: 90px;
+}
+.experience-image-object {
+    position: relative;
+    overflow: hidden;
+}
+.experience-image-object .overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 #portfolio {
     margin-top: 102px;
@@ -563,4 +585,33 @@ button, input {
     font-size: 20px;
     line-height: 30px;
     text-align: center;
+}
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes typing {
+    0% { width: 0 }
+    25% { width: 100% }
+    75% { width: 100% }
+    100% { width: 0 }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #02040E; }
+}
+@keyframes stretch {
+    50% { 
+        width: 100%;
+        height: 100%;
+    }
+}
+@keyframes colorChange {
+    50% { 
+        color: #A0CECB;
+    }
 }

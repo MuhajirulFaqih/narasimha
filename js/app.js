@@ -14,8 +14,46 @@ mm.add("(min-width: 800px)", () => {
         }
     });
     hero.fromTo(".hero-image", {opacity: 0, scale: 0, y: 400 }, { duration: 1, opacity: 1, scale: 1, y: 0 })
-    .fromTo("#about", {scale: 0, y: -80 }, { duration: 3.5, scale: 1, y: 0 }, "+=.5")
-    .to(".about-content-body", { duration: 4, bottom: 0 }, "+=.5");
+        .fromTo("#about", {scale: 0, y: -80 }, { duration: 3.5, scale: 1, y: 0 }, "+=.5")
+        .to(".about-content-body", { duration: 4, bottom: 0 }, "+=.5")
+        .to(".about-title", { duration: 4, x: 72 }, "-=4")
+        .to(".about-cta", { duration: 4, x: -72 }, "-=4")
+        .to(".about-footer", { duration: 4, x: -96 }, "-=4");
+    
+    const heroParallax = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#top",
+            start: "top top",
+            end: "bottom bottom",
+            scrub: true,
+        }
+    });
+    heroParallax.to(".hero-scroll", { duration: 1, y: 96 })
+                .to(".hero-title small", { duration: 1, x: 56 }, "-=1")
+                .to(".hero-title span", { duration: 1, x: -90 }, "-=1")
+
+    const skillsParallax = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#skills",
+            start: "top +=350",
+            scrub: true,
+        }
+    });
+    skillsParallax.to(".skills-box", { duration: 1, y: 90 })
+                .to(".skills-point-4", { duration: 1, y: 100 }, "-=1")
+                .to(".skills-point-6", { duration: 1, x: 80 }, "-=1")
+                .to(".skills-point-7", { duration: 1, x: -80 }, "-=1")
+                .to(".skills-point-8", { duration: 1, x: -100 }, "-=1")
+    
+    const experienceParallax = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#experience",
+            start: "top top",
+            end: "bottom bottom",
+            scrub: true,
+        }
+    });
+    experienceParallax.fromTo(".experience-image-object .overlay", { opacity: 0, y: 0}, { duration: 1, scale: 2.5, transformOrigin:"50% 50%", y: "-35%", opacity: 1 })
 
     // Experience
     var slideLength;
