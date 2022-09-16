@@ -61,11 +61,13 @@ class Cursor {
         this.body = $(this.options.container);
         this.el = $('<div class="cb-cursor"></div>');
         this.text = $('<div class="cb-cursor-text"></div>');
+        this.tag = $('<div class="cb-cursor-tag"></div>');
         this.init();
     }
 
     init() {
         this.el.append(this.text);
+        this.el.append(this.tag);
         this.body.append(this.el);
         this.bind();
         this.move(-window.innerWidth, -window.innerHeight, 0);
@@ -104,6 +106,14 @@ class Cursor {
             self.setText(this.dataset.cursorText);
         }).on('mouseleave', '[data-cursor-text]', function () {
             self.removeText();
+        }).on('mouseenter', '[data-cursor-tag]', function () {
+            if($(this).find(".cursor-tag")) {
+                self.setTag($(this).find(".cursor-tag").html(), $(this).width());
+                $(this).find(".cursor-tag").hide()
+            }
+        }).on('mouseleave', '[data-cursor-tag]', function () {
+            self.removeTag();
+            $(this).find(".cursor-tag").show() 
         }).on('mouseenter', '[data-cursor-stick]', function () {
             self.setStick(this.dataset.cursorStick);
         }).on('mouseleave', '[data-cursor-stick]', function () {
@@ -130,6 +140,15 @@ class Cursor {
 
     removeText() {
         this.el.removeClass('-text');
+    }
+    
+    setTag(tag, width) {
+        this.tag.html(tag).css("width", width - 100);
+        this.el.addClass('-tag');
+    }
+
+    removeTag() {
+        this.el.removeClass('-tag');
     }
 
     setStick(el) {

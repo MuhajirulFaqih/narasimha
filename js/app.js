@@ -54,6 +54,33 @@ mm.add("(min-width: 800px)", () => {
         }
     });
     experienceParallax.fromTo(".experience-image-object .overlay", { opacity: 0, y: 0}, { duration: 1, scale: 2.5, transformOrigin:"50% 50%", y: "-35%", opacity: 1 })
+    
+    const portfolioParallax = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".portfolio-content",
+            start: "top +=250",
+            end: "bottom bottom",
+            scrub: true,
+        }
+    });
+    $(".portfolio-project").each(function(i, v) {
+        if(i%2 == 0) {
+            portfolioParallax.to($(v), { duration: 1, y: 100 })
+        } else {
+            portfolioParallax.to($(v), { duration: 1, y: -100 }, "-=.5")
+        }
+    })
+    
+    const touchParallax = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#touch",
+            start: "top +=200",
+            end: "bottom bottom",
+            scrub: true,
+        }
+    });
+    touchParallax.to(".touch-left", { duration: 1, x: 0 })
+                .to(".touch-right", { duration: 1, x: 0 }, "-=1")
 
     // Experience
     var slideLength;
