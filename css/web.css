@@ -1,0 +1,566 @@
+[data-load-container] {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100vw;
+}
+body {
+    font-family: 'Mulish', sans-serif;
+    background: #02040E;
+    color: #FFFFFF !important;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400 !important;
+}
+a {
+    text-decoration: none !important;
+    color: inherit;
+    outline: none;
+}
+a:hover {
+    text-decoration: none !important;
+    color: inherit;
+}
+button, input {
+    outline: none !important;
+    border: none;
+}
+.z-index-1 {
+    z-index: 1;
+}
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+#top {
+    height: 3800px;
+    position: relative;
+}
+#hero {
+    position: relative;
+    min-height: 100vh;
+}
+.hero-logo, .hero-social, .hero-social a, .hero-scroll,
+.about-cta, .about-cta > div > span, .skills-circle, .skills-box-white,
+.experience-nav, .experience-nav span, .portfolio-box-caption a, .portfolio-cta div, 
+.touch-contact span, .touch-contact div, .footer-logo, .footer-social, .footer-social a {
+    display: inline-block;
+}
+.hero-nav {
+    padding: 48px 0;
+}
+.hero-logo {
+    width: 65px;
+}
+.hero-social a {
+    width: 24px;
+    margin-left: 32px;
+}
+.hero-content {
+    position: relative;
+}
+.hero-image div {
+    position: relative;
+}
+.hero-image div:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(180deg, rgba(2, 4, 14, 0) 0%, rgba(2, 4, 14, 0) 50.84%, #02040E 100%);
+}
+.hero-scroll {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    width: 233px;
+    height: 233px;
+    border: 2px solid #FFFFFF;
+    padding: 40px;
+    position: relative;
+    border-radius: 50%;
+}
+.hero-scroll span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hero-title-outer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.hero-title small {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+}
+.hero-title div {
+    font-family: 'Oswald';
+    font-weight: 700;
+    font-size: 207px;
+    line-height: 120%;
+    mix-blend-mode: difference;
+    text-align: center;
+}
+.hero-title span {
+    display: block;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: right;
+    color: #A0CECB;
+}
+#about {
+    background: #FFFFFF;
+    color: #1D1F28;
+    padding: 143px 0 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+}
+.about-title, .skills-title, .experience-title, .touch-title {
+    font-family: 'Oswald';
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 120%;
+    color: #02040E;
+    margin-bottom: 64px;
+}
+.about-cta {
+    width: 233px;
+    height: 233px;
+    position: relative;
+    border: 2px solid #02040E;
+    padding: 16px;
+    border-radius: 50%;
+    text-align: center;
+}
+.about-cta > div {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #02040E;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+}
+.about-cta > div > div {
+    margin-bottom: 8px;
+}
+.about-cta > div > span {
+    width: 32px;
+}
+.about-content {
+    margin-top: 112px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 64px;
+    overflow: hidden;
+    position: relative;
+    height: 320px;
+}
+.about-content-body {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.about-footer {
+    font-family: 'Oswald';
+    font-weight: 700;
+    font-size: 128px;
+    line-height: 120%;
+    text-align: right;
+    color: #F0F0F0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+}
+#skills {
+    margin-top: 190px;
+    margin-bottom: 207px;
+    font-weight: 700;
+}
+.skills-title {
+    color: #FFFFFF;
+    margin-bottom: 80px;
+}
+.skills-box {
+    width: 100%;
+    min-height: 579px;
+    background: #A0CECB;
+    color: #02040E;
+    position: relative;
+}
+.skills-box:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 170px;
+    height: 167px;
+    background: #FFFFFF;
+}
+.skills-point-1, .skills-point-2, .skills-point-3,
+.skills-point-4, .skills-point-5, .skills-point-6,
+.skills-point-7, .skills-point-8 {
+    line-height: 120%;
+}
+.skills-point-1, .skills-point-2, .skills-circle-outline {
+    position: absolute;
+}
+.skills-point-1 {
+    font-size: 32px;
+    top: 0;
+    left: 0;
+}
+.skills-point-2 {
+    font-size: 72px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.skills-circle-outline {
+    bottom: 0;
+    right: 0;
+}
+.skills-circle {
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    border: 4px solid #02040E;
+    position: relative;
+}
+.skills-point-3 {
+    font-size: 56px;
+    position: absolute;
+    text-align: center;
+    display: block;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.skills-point-4 {
+    font-size: 32px;
+}
+.skills-box-white {
+    padding: 64px 40px;
+    background: #FFFFFF;
+    text-align: center;
+}
+.skills-point-5 {
+    font-size: 32px;
+    color: #02040E;
+}
+.skills-point-6 {
+    margin: 84px 0 59px;
+    font-size: 56px;
+}
+.skills-point-7 {
+    font-size: 56px;
+    text-align: right;
+    color: #A0CECB;
+    margin-bottom: 117px;
+}
+.skills-point-8 {
+    text-align: right;
+    font-size: 32px;
+}
+#experience {
+    margin-bottom: 100px;
+    height: 2000px;
+    position: relative;
+}
+.experience-sticky {
+    padding-top: 90px;
+}
+.experience-title {
+    color: #FFFFFF;
+}
+.experience-nav {
+    border-radius: 50%;
+    padding: 16px;
+    border: 1px solid #FFFFFF;
+    margin-left: 24px;
+}
+.experience-nav span {
+    width: 24px;
+}
+.experience-slider {
+    margin-top: 72px;
+    overflow: hidden;
+}
+.experience-slider-inner {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: all .5s;
+}
+.experience-content {
+    flex: 0 0 485px;
+}
+.experience-content-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 16px;
+}
+.experience-content-subtitle {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+}
+.experience-content-subtitle small {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #A0CECB;
+}
+.experience-content-body {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.05em;
+}
+.experience-image {
+    position: absolute;
+    top: 90px;
+}
+#portfolio {
+    margin-top: 102px;
+    margin-bottom: 100px;
+}
+.portfolio-subtitle {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+.portfolio-subtitle span {
+    color:#A0CECB;
+}
+.portfolio-bg {
+    background: url("../assets/portfolio.png") no-repeat center center;
+    background-size: cover;
+    margin-bottom: 119px;
+}
+.portfolio-banner {
+    position: relative;
+}
+.portfolio-banner img {
+    visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+.portfolio-title-outer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+.portfolio-title {
+    font-family: 'Oswald';
+    font-weight: 700;
+    font-size: 207px;
+    line-height: 120%;
+    text-align: right;
+    color: #02040E;
+}
+.portfolio-box-outer {
+    margin-bottom: 150px;
+}
+.portfolio-box {
+    background: #A0CECB;
+    height: 416px;
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-box-number, .portfolio-box-caption, .portfolio-box-thumb {
+    position: absolute;
+}
+.portfolio-box-number {
+    font-family: 'Oswald';
+    font-weight: 700;
+    font-size: 151px;
+    line-height: 120%;
+    color: #FFFFFF;
+    opacity: 0.24;
+    top: 0;
+    left: 0;
+}
+.portfolio-box-caption {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+.portfolio-box-caption.reverse, .portfolio-box-number.reverse {
+    left: auto;
+    right: 0;
+}
+.portfolio-box-caption > div > span {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.portfolio-box-caption > div > div {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: #02040E;
+}
+.portfolio-box-caption a {
+    padding: 16px;
+    border-radius: 50%;
+    border: 1px solid #FFFFFF;
+}
+.portfolio-box-caption a img {
+    width: 24px;
+}
+.portfolio-box-thumb {
+    width: 259px;
+    right: 0;
+    bottom: 0;
+    transition: all .5s;
+    z-index: 0;
+}
+.portfolio-box-thumb.reverse {
+    right: auto;
+    left: 0;
+}
+.portfolio-project {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 120%;
+}
+.portfolio-cta {
+    padding: 24px 40px;
+    border-radius: 80px;
+    border: 1px solid #FFFFFF;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    font-style: italic;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    display: inline-flex;
+    height: 96px;
+}
+.portfolio-cta > div {
+    overflow: hidden;
+    height: 48px;
+    position: relative;
+}
+.portfolio-cta > div > div {
+    display: block;
+    transition: all .5s;
+}
+.portfolio-cta > div > .cta-2 {
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+.portfolio-cta:hover > div > .cta-1 {
+    margin-top: -40px;
+}
+.portfolio-cta:hover > div > .cta-2 {
+    top: 0;
+}
+.portfolio-cta span {
+    display: inline-block;
+    width: 40px;
+    margin-left: 16px;
+}
+#touch {
+    margin-top: 106px;
+    margin-bottom: 4px;
+    background: #FFFFFF;
+    color: #02040E;
+    background: url("../assets/touch.png") no-repeat center center;
+    background-color: #FFFFFF;
+    background-size: cover;
+    position: relative;
+}
+.touch-bg > img {
+    visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+.touch-content {
+    position: absolute;
+    width: 100%;
+    top: 127px;
+    left: 0;
+}
+.touch-title {
+    font-size: 128px;
+    line-height: 120%;
+}
+.touch-title span {
+    color: #A0CECB;
+}
+.touch-contact {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.touch-contact span {
+    padding: 16px;
+    border-radius: 50%;
+    border: 1px solid #02040E;
+}
+.touch-contact img {
+    width: 24px;
+}
+.touch-contact div {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+}
+#footer {
+    padding: 100px 0 123px;
+}
+.footer-logo {
+    width: 89px;
+    margin-bottom: 20px;
+}
+.footer-social a {
+    width: 32px;
+    margin: 0 16px 20px;
+}
+.footer-copy {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+}

@@ -1,0 +1,341 @@
+@media (max-width: 1280px){
+    .container {
+        max-width: 1140px;
+    }
+    #top {
+        height: 3200px;
+    }
+    .hero-nav {
+        padding: 24px 0;
+    }
+    .hero-scroll {
+        width: 200px;
+        height: 200px;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .hero-title small {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .hero-title div {
+        font-size: 190px;
+    }
+    .hero-title span {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .hero-image {
+        padding: 0 48px;
+    }
+    #about {
+        padding: 80px 0 0;
+    }
+    .about-title, .skills-title, .experience-title, .touch-title {
+        font-size: 80px;
+        margin-bottom: 56px;
+    }
+    .about-cta {
+        width: 200px;
+        height: 200px;
+    }
+    .about-cta > div {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .about-footer {
+        font-size: 96px;
+    }
+    #skills {
+        margin-top: 56px;
+        margin-bottom: 130px;
+        font-weight: 700;
+    }
+    .skills-title {
+        margin-bottom: 64px;
+    }
+    .skills-box {
+        min-height: 500px;
+    }
+    .skills-box:after {
+        width: 130px;
+        height: 127px;
+    }
+    .skills-point-1, .skills-point-4, .skills-point-5, .skills-point-8 {
+        font-size: 24px;
+    }
+    .skills-point-2 {
+        font-size: 56px;
+    }
+    .skills-circle {
+        width: 150px;
+        height: 150px;
+    }
+    .skills-point-3 {
+        font-size: 32px;
+    }
+    .skills-point-6 {
+        margin-top: 48px;
+    }
+    .skills-point-6, .skills-point-7 {
+        font-size: 48px;
+        margin-bottom: 72px;
+    }
+    #experience {
+        height: 1500px;
+    }
+    .experience-sticky {
+        padding-top: 70px;
+    }
+    .experience-slider {
+        margin-top: 40px;
+    }
+    .experience-content {
+        flex: 0 0 400px;
+    }
+    .experience-content-title {
+        font-size: 24px;
+    }
+    .experience-content-subtitle {
+        font-size: 20px;
+    }
+    .experience-content-subtitle small {
+        font-size: 16px;
+    }
+    .experience-content-body {
+        font-size: 20px;
+    }
+    .portfolio-subtitle {
+        font-size: 24px;
+    }
+    .portfolio-title {
+        font-size: 140px;
+    }
+    .portfolio-box-number {
+        font-size: 140px;
+    }
+    .portfolio-project {
+        font-size: 48px;
+    }
+    .touch-contact div {
+        font-size: 24px;
+    }
+    
+}
+@media (max-width: 1199.98px){
+    .container {
+        max-width: 960px;
+    }
+    #hero > .container {
+        height: 100vh;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+    }
+    .hero-nav {
+        flex: 0 0 10%;
+    }
+    .hero-content {
+        flex: 0 0 90%;
+    }
+    .hero-image-outer {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+    }
+    .hero-scroll {
+        margin-bottom: 5vh;
+    }
+    #about {
+        height: 100vh;
+        padding: 40px 0;
+        display: flex;
+        align-items: center;
+    }
+    #experience {
+        height: 1800px;
+    }
+    .experience-title {
+        margin-bottom: 24px;
+    }
+}
+@media (max-width: 991.98px) {
+    .container {
+        max-width: 720px;
+    }
+    #hero {
+        height: 100vh;
+        overflow: hidden;
+    }
+    .hero-logo {
+        width: 40px;
+    }
+    .hero-social a {
+        margin-left: 16px;
+        width: 20px;
+    }
+    .hero-scroll {
+        width: 128px;
+        height: 128px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .hero-title small {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .hero-title div {
+        font-size: 88px;
+    }
+    .hero-title span {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .about-title, .skills-title, .experience-title, .touch-title {
+        font-size: 48px;
+        margin-bottom: 40px;
+    }
+    .about-cta {
+        width: 128px;
+        height: 128px;
+    }
+    .about-cta > div {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .about-content {
+        font-size: 20px;
+        line-height: 40px;
+        margin-top: 16px;
+    }
+    .about-footer {
+        font-size: 56px;
+    }
+    #experience {
+        height: 1300px;
+    }
+    #skills {
+        margin-top: 87px;
+        margin-bottom: 127px;
+    }
+    .skills-box {
+        min-height: 306px;
+        margin-bottom: 24px;
+    }
+    .skills-box:after {
+        width: 72px;
+        height: 70px;
+    }
+    .skills-point-1 {
+        font-size: 16px;
+    }
+    .skills-point-2 {
+        font-size: 32px;
+    }
+    .skills-circle {
+        width: 112px;
+        height: 112px;
+    }
+    .skills-point-3 {
+        font-size: 24px;
+    }
+    .skills-point-4 {
+        font-size: 20px;
+    }
+    .skills-box-white {
+        padding: 24px 40px;
+        margin-bottom: 24px;
+    }
+    .skills-point-6, .skills-point-7 {
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+    .skills-point-8 {
+        font-size: 16px;
+    }
+    .experience-sticky {
+        padding-top: 16px;
+    }
+    .experience-slider-inner {
+        gap: 24px;
+    }
+    .experience-content {
+        flex: 0 0 288px;
+    }
+    .experience-title {
+        margin-bottom: 16px;
+    }
+    .experience-content-subtitle {
+        display: block;
+        margin-bottom: 16px;
+    }
+    .experience-nav {
+        margin: 0 12px;
+    }
+    .experience-content-body {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .portfolio-title {
+        font-size: 96px;
+    }
+    .portfolio-project {
+        font-size: 32px;
+    }
+    .portfolio-box-outer {
+        margin-bottom: 52px;
+    }
+    .portfolio-cta {
+        padding: 20px 32px;
+        font-size: 16px;
+        line-height: 24px;
+        height: 72px;
+    }
+    .portfolio-cta > div {
+        height: 24px;
+    }
+    .portfolio-cta > div > .cta-2 {
+        top: 24px;
+    }
+    .portfolio-cta:hover > div > .cta-1 {
+        margin-top: -24px;
+    }
+    .portfolio-cta span {
+        width: 32px;
+    }
+    .touch-contact {
+        margin-bottom: 16px;
+    }
+    .touch-contact span {
+        padding: 10px;
+        line-height: 14px;
+    }
+    .touch-contact img {
+        width: 16px;
+    }
+    .touch-contact div {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .footer-copy {
+        font-size: 16px;
+    }
+    .footer-social a {
+        margin: 0 12px 20px;
+    }
+}
+@media (max-width: 767.98px) {
+    .container {
+        max-width: 375px;
+    }
+    body {
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+@media (max-width: 575.98px) {
+}
+@media (max-width: 360px) {
+	
+}
