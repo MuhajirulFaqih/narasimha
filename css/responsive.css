@@ -338,8 +338,16 @@
         height: auto;
         overflow: initial;
     }
+    #hero > .container {
+        min-height: 100vh;
+        height: auto;
+        display: block;
+    }
     .hero-image-outer {
-        margin-top: -48px;
+        margin-top: 74px;
+        top: 0;
+        transform: none;
+        position: relative;
     }
     .hero-image {
         padding: 0;

@@ -77,8 +77,6 @@ mm.add("(max-width: 800px)", () => {
     Draggable.create($(".experience-slider-inner"), {
         type: "x",
         inertia: true,
-        bounds: {minX: (- $(".experience-slider-inner")[0].offsetWidth), maxX: 0},
+        bounds: {minX: - ( $(".experience-slider-inner")[0].offsetWidth + 300), maxX: 0},
     })
 })
-
-mm.revert();
