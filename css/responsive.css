@@ -208,6 +208,7 @@
         font-size: 20px;
         line-height: 40px;
         margin-top: 16px;
+        height: 240px;
     }
     .about-footer {
         font-size: 56px;
@@ -244,7 +245,7 @@
         font-size: 20px;
     }
     .skills-box-white {
-        padding: 24px 40px;
+        padding: 40px 24px;
         margin-bottom: 24px;
     }
     .skills-point-6, .skills-point-7 {
@@ -327,15 +328,90 @@
 }
 @media (max-width: 767.98px) {
     .container {
-        max-width: 375px;
+        max-width: 350px;
     }
     body {
         font-size: 14px;
         line-height: 21px;
     }
+    .hero-image-outer {
+        margin-top: -48px;
+    }
+    .hero-image {
+        padding: 0;
+    }
+    .hero-scroll {
+        margin-top: 48px;
+    }
+    .hero-title div {
+        font-size: 56px;
+    }
+    #about {
+        overflow-y: auto;
+        align-items: start;
+    }
+    .about-content {
+        margin-top: 24px;
+        padding-bottom: 24px;
+    }
+    .about-footer {
+        font-size: 32px;
+        right: auto;
+        display: block;
+        text-align: center;
+    }
+    .skills-circle {
+        border: 2px solid #02040E;
+    }
+    .portfolio-subtitle {
+        font-size: 16px;
+    }
+    .portfolio-title {
+        font-size: 48px;
+    }
+    .portfolio-box {
+        height: 220px;
+        margin-bottom: 24px;
+    }
+    .portfolio-box-outer {
+        margin-bottom: 24px;
+    }
+    .portfolio-box-number {
+        font-size: 72px;
+    }
+    .portfolio-box-caption {
+        gap: 8px;
+    }
+    .portfolio-box-caption > div > span {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .portfolio-box-caption > div > div {
+        font-size: 16px;
+    }
+    .portfolio-box-caption a {
+        padding: 8px;
+        line-height: 8px;
+    }
+    .portfolio-box-caption a img {
+        width: 16px;
+    }
+    .portfolio-box-thumb {
+        width: 118px;
+    }
+    .portfolio-cta {
+        margin-top: 24px;
+    }
+    #touch {
+        min-height: 800px;
+        background-size: contain;
+        background-position: center 80%;
+    }
 }
 @media (max-width: 575.98px) {
 }
 @media (max-width: 360px) {
-	
+    .container {
+        max-width: 320px;
+    }
 }
