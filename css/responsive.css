@@ -336,7 +336,7 @@
     }
     #top, #hero {
         height: auto;
-        overflow: auto;
+        overflow: initial;
     }
     .hero-image-outer {
         margin-top: -48px;
