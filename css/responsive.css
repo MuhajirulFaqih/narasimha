@@ -334,6 +334,10 @@
         font-size: 14px;
         line-height: 21px;
     }
+    #top, #hero {
+        height: auto;
+        overflow: auto;
+    }
     .hero-image-outer {
         margin-top: -48px;
     }
@@ -347,6 +351,8 @@
         font-size: 56px;
     }
     #about {
+        position: relative;
+        align-items: start;
         padding: 80px 0 40px;
     }
     .about-content {
@@ -358,6 +364,10 @@
         right: auto;
         display: block;
         text-align: center;
+    }
+    #experience {
+        height: auto;
+        margin-bottom: 217px;
     }
     #top {
         margin-bottom: 87px;
