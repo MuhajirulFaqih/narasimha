@@ -344,9 +344,9 @@
         display: block;
     }
     .hero-image-outer {
-        margin-top: 74px;
+        margin-top: 56px;
         top: 0;
-        transform: none;
+        transform: none !important;
         position: relative;
     }
     .hero-image {
