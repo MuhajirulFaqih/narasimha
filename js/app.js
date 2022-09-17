@@ -1,3 +1,12 @@
+$(window).on("load", function() {
+	setTimeout(function() {
+        $(".preloader").fadeOut("slow");
+        $(".preloader").removeClass(".active");
+        $(".overlayer").fadeOut("slow");
+        $(".overlayer").removeClass(".active");
+    }, 2000)
+})
+
 // Scroll
 gsap.registerPlugin(ScrollTrigger, Draggable);
 
