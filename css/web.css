@@ -80,6 +80,7 @@ button, input {
 }
 #hero {
     position: relative;
+    overflow: hidden;
     min-height: 100vh;
 }
 .hero-logo, .hero-social, .hero-social a, .hero-scroll, .hero-title small,
