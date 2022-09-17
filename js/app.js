@@ -2,7 +2,7 @@
 gsap.registerPlugin(ScrollTrigger, Draggable);
 
 let mm = gsap.matchMedia();
-mm.add("(min-width: 800px)", () => {
+mm.add("(min-width: 800.98px)", () => {
     // Hero
     const hero = gsap.timeline({
         scrollTrigger: {
@@ -138,10 +138,106 @@ mm.add("(min-width: 800px)", () => {
     
 });
 
-mm.add("(max-width: 800px)", () => {
-    Draggable.create($(".experience-slider-inner"), {
+mm.add("(max-width: 800.98px)", () => {
+    var draggable = Draggable.create($(".experience-slider-inner"), {
         type: "x",
         inertia: true,
         bounds: {minX: - ( $(".experience-slider-inner")[0].offsetWidth + 300), maxX: 0},
+    })[0];
+    var minX = - ($(".experience-slider-inner")[0].offsetWidth + 300)
+    $(".experience-nav.prev").click(function() {
+        if(draggable.x < 0) {
+            var newDrag = draggable.x + 200
+            draggable.x = newDrag
+            gsap.set(".experience-slider-inner", {x: newDrag})
+            draggable.update(true)
+        }
     })
+    $(".experience-nav.next").click(function() {
+        if(draggable.x > minX) {
+            var newDrag = draggable.x - 200
+            draggable.x = newDrag
+            gsap.set(".experience-slider-inner", {x: newDrag})
+            draggable.update(true)
+        }
+    })
+
+    const hero = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#top",
+            start: "top top",
+            end: "bottom bottom",
+            scrub: true,
+        }
+    });
+    hero.to(".hero-image", { duration: 2, opacity: 1, scale: 1, y: 32 })
+        .fromTo("#about", { rotationX: "-90deg", transformPerspective: 500, force3D: true, transformOrigin: "top center", transformStyle: "preserve-3d" }, { duration: 5, rotationX: "0deg" })
+        .to(".about-content-body", { duration: 6, bottom: 0 }, "+=4")
+        .to(".about-title", { duration: 2, x: 8 }, "-=4")
+        .to(".about-cta", { duration: 2, x: -8 }, "-=4")
+        .to(".about-footer", { duration: 2, x: -24 }, "-=4");
+    
+    const heroParallax = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#top",
+            start: "top top",
+            end: "bottom bottom",
+            scrub: true,
+        }
+    });
+    heroParallax.to(".hero-scroll", { duration: 1, y: 24 })
+                .to(".hero-title small", { duration: 1, x: 24 }, "-=1")
+                .to(".hero-title span", { duration: 1, x: -32 }, "-=1")
+    
+    const skillsParallax = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#skills",
+            start: "top +=100",
+            scrub: true,
+        }
+    });
+    skillsParallax.to(".skills-box", { duration: 1, y: 40 })
+                .to(".skills-point-4", { duration: 1, y: 48 }, "-=1")
+                .to(".skills-point-6", { duration: 1, x: 32 }, "-=1")
+                .to(".skills-point-7", { duration: 1, x: -32 }, "-=1")
+                .to(".skills-point-8", { duration: 1, x: -32 }, "-=1")
+    
+    const portfolioParallax = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".portfolio-content",
+            start: "top +=100",
+            end: "bottom bottom",
+            scrub: true,
+        }
+    });
+    $(".portfolio-box-outer").each(function(i, v) {
+        if(i == 0) {
+            portfolioParallax.to($(v), { duration: 1, y: -60 });
+        } else {
+            portfolioParallax.to($(v), { duration: 1, y: -60 }, "-=.5");
+        }
+    })
+    portfolioParallax.to(".portfolio-cta", { duration: 1, y: -60 }, "-=.5");
+    
+    const touchParallax = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#touch",
+            start: "top +=200",
+            end: "bottom bottom",
+            scrub: true,
+        }
+    });
+    touchParallax.to(".touch-left", { duration: 1, x: 0 })
+                .to(".touch-right", { duration: 1, x: 0 }, "-=1");
+
+    const touchParallaxText = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#touch",
+            start: "top +=210",
+            end: "bottom bottom",
+            scrub: true,
+        }
+    });
+    touchParallaxText.to(".touch-contact", { duration: 1, y: 80 })
+                .to(".touch-title", { duration: 1, y: 80 }, "-=.8");
 })

@@ -326,7 +326,7 @@
         margin: 0 12px 20px;
     }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 800.98px) {
     .container {
         max-width: 350px;
     }
@@ -427,8 +427,10 @@
     }
     #touch {
         min-height: 800px;
-        background-size: contain;
-        background-position: center 80%;
+    }
+    .touch-left, .touch-right {
+        top: auto;
+        bottom: 15.5vh;
     }
 }
 @media (max-width: 575.98px) {

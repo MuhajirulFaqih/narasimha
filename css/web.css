@@ -198,6 +198,7 @@ button, input {
     margin-top: 190px;
     margin-bottom: 207px;
     font-weight: 700;
+    overflow: hidden;
 }
 .skills-title {
     color: #FFFFFF;
