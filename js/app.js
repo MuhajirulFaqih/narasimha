@@ -103,6 +103,7 @@ mm.add("(min-width: 801px)", () => {
         start: "top top",
         end: "bottom bottom",
         anticipatePin: 1,
+        pinType: "fixed",
         invalidateOnRefresh: true,
         onRefresh: onResize,
         onUpdate: updateHandler
