@@ -281,6 +281,7 @@ button, input {
 .skills-point-4, .skills-point-5, .skills-point-6,
 .skills-point-7, .skills-point-8 {
     line-height: 120%;
+    transition: all .5s ease-out;
 }
 .skills-point-1, .skills-point-2, .skills-circle-outline {
     position: absolute;
