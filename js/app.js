@@ -180,11 +180,11 @@ mm.add("(max-width: 800.98px)", () => {
         }
     });
     hero.to(".hero-image", { duration: 2, opacity: 1, scale: 1, y: 32 })
-        .fromTo("#about", { rotationX: "-90deg", transformPerspective: 500, force3D: true, transformOrigin: "top center", transformStyle: "preserve-3d" }, { duration: 5, rotationX: "0deg" })
-        .to(".about-content-body", { duration: 6, bottom: 0 }, "+=4")
-        .to(".about-title", { duration: 2, x: 8 }, "-=4")
-        .to(".about-cta", { duration: 2, x: -8 }, "-=4")
-        .to(".about-footer", { duration: 2, x: -24 }, "-=4");
+        .fromTo("#about", { scale: 0, }, { duration: 5, scale: 1 }, "+=3")
+        .to(".about-content-body", { duration: 8, bottom: 0 }, "+=5")
+        .to(".about-title", { duration: 2, x: 8 }, "-=2")
+        .to(".about-cta", { duration: 2, x: -8 }, "-=2")
+        .to(".about-footer", { duration: 2, x: -24 }, "-=2");
     
     const heroParallax = gsap.timeline({
         scrollTrigger: {
