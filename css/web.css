@@ -102,6 +102,9 @@ button, input {
 .hero-content {
     position: relative;
 }
+.hero-image {
+    transition: all .5s ease-out;
+}
 .hero-image div {
     position: relative;
 }
@@ -126,6 +129,7 @@ button, input {
     padding: 40px;
     position: relative;
     border-radius: 50%;
+    transition: all .5s ease-out;
 }
 .hero-scroll span {
     position: absolute;
@@ -142,6 +146,7 @@ button, input {
     font-weight: 600;
     font-size: 24px;
     line-height: 36px;
+    transition: all .5s ease-out;
 }
 .hero-title div {
     font-family: 'Oswald';
@@ -150,6 +155,7 @@ button, input {
     line-height: 120%;
     mix-blend-mode: difference;
     text-align: center;
+    transition: all .5s ease-out;
 }
 .hero-title span {
     display: block;
@@ -159,6 +165,7 @@ button, input {
     line-height: 48px;
     text-align: right;
     color: #A0CECB;
+    transition: all .5s ease-out;
 }
 #about {
     background: #FFFFFF;
@@ -171,6 +178,7 @@ button, input {
     top: 0;
     bottom: 0;
     height: 100%;
+    transition: all .5s ease-out;
 }
 .about-title, .skills-title, .experience-title, .touch-title {
     font-family: 'Oswald';
@@ -179,6 +187,7 @@ button, input {
     line-height: 120%;
     color: #02040E;
     margin-bottom: 64px;
+    transition: all .5s ease-out;
 }
 .about-cta {
     width: 233px;
@@ -188,6 +197,7 @@ button, input {
     padding: 16px;
     border-radius: 50%;
     text-align: center;
+    transition: all .5s ease-out;
 }
 .about-cta > div {
     font-style: italic;
@@ -233,6 +243,7 @@ button, input {
     bottom: 0;
     right: 0;
     z-index: 0;
+    transition: all .5s ease-out;
 }
 #skills {
     margin-top: 190px;
@@ -412,6 +423,7 @@ button, input {
     bottom: 0;
     left: 0;
     width: 100%;
+    transition: all .5s ease-out;
 }
 #portfolio {
     margin-top: 102px;
@@ -577,6 +589,7 @@ button, input {
     position: absolute;
     top: 0;
     z-index: 0;
+    transition: all .5s linear;
 }
 .touch-left {
     left: 0;
