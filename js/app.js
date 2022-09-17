@@ -2,7 +2,7 @@
 gsap.registerPlugin(ScrollTrigger, Draggable);
 
 let mm = gsap.matchMedia();
-mm.add("(min-width: 800.98px)", () => {
+mm.add("(min-width: 801px)", () => {
     // Hero
     const hero = gsap.timeline({
         scrollTrigger: {
