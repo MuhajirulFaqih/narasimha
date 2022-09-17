@@ -50,7 +50,7 @@ mm.add("(min-width: 801px)", () => {
             scrub: true,
         }
     });
-    skillsParallax.to(".skills-box", { duration: 1, y: 90 })
+    skillsParallax.to(".skills-box", { duration: 1, y: 40 })
                 .to(".skills-point-4", { duration: 1, y: 100 }, "-=1")
                 .to(".skills-point-6", { duration: 1, x: 80 }, "-=1")
                 .to(".skills-point-7", { duration: 1, x: -80 }, "-=1")
