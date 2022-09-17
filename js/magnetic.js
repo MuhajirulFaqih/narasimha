@@ -195,7 +195,5 @@ class Cursor {
     }
 }
 
-
-
 const cursor = new Cursor();
 $('[data-magnetic]').each(function () {new Magnetic(this);});
