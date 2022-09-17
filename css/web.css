@@ -226,6 +226,7 @@ button, input {
     overflow: hidden;
     position: relative;
     height: 320px;
+    transition: all .5s linear;
 }
 .about-content-body {
     position: absolute;
