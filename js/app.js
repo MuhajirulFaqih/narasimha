@@ -1,9 +1,11 @@
 $(window).on("load", function() {
+    $("body").css("overflow-y", "hidden");
 	setTimeout(function() {
         $(".preloader").fadeOut("slow");
         $(".preloader").removeClass(".active");
         $(".overlayer").fadeOut("slow");
         $(".overlayer").removeClass(".active");
+        $("body").css("overflow-y", "auto");
     }, 2000)
 })
 
